@@ -1,0 +1,94 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(219, 214, 214);
+  min-height: 100vh;
+  background-color: white;
+  overflow: auto;
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center; //vertical
+    justify-content: center; //horizontal
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: indigo;
+    }
+
+
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(219, 214, 214);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      color: gray;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ece8ff
+      }
+
+      .icon {
+        font-size: 20px;
+        color: rgb(57, 0, 122);
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 600;
+        color: #888;
+        margin-left: 10px;
+      }
+
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    .colorOption {
+      width: 20px;
+      height: 20px;
+      color: black;
+      border: 1px solid indigo;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+
+      &:nth-child(1) {
+        background-color: #fff;
+      }
+
+      &:nth-child(2) {
+        background-color: #333;
+      }
+
+    }
+  }
+}
